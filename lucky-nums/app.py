@@ -20,7 +20,7 @@ def homepage():
     return render_template("index.html")
 
 
-@app.route("//api/get-lucky-num", methods=["POST"])
+@app.route("/api/get-lucky-num", methods=["POST"])
 def get_lucky_results():
     """Creates results from form data & returns it.
 
@@ -42,7 +42,7 @@ def get_lucky_results():
     year = request.json["year"]
 
 ################################
-# validation
+# hand-validation
 ################################
 
     if name == "":
