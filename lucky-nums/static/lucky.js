@@ -1,6 +1,9 @@
+// from random import randint 
 /** processForm: get data from form and make AJAX call to our API. */
 
 function processForm(evt) {
+    let random_num = Math.floor(Math.random() * 100 + 1);
+    console.log("HERE!!!", random_num);
 }
 
 /** handleResponse: deal with response from our lucky-num API. */
